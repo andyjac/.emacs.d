@@ -1,0 +1,26 @@
+var _ = require('lodash');
+
+module.exports = function(matches) {
+  var matchRecords = [];
+  var byMatch = _.chunk(matches, 2);
+  var matchDataMap = _.forEach(byMatch, fetchMatchData);
+
+  function fetchMatchData(match) {
+    var matchObj = {};
+
+    _.forEach(match, function(team, i) {
+      var lastSpace = team.lastIndexOf(' ');
+      var name = team.substring(0, lastSpace);
+      var score = parseInt(team.substring(lastSpace + 1, team.length));
+
+      matchObj['team' + (i + 1)] = {
+        name: name,
+        score: score
+      };
+    });
+
+    matchRecords.push(matchObj);
+  }
+
+  return matchRecords;
+};
