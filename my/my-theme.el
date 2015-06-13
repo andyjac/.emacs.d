@@ -1,3 +1,3 @@
-(require 'solarized-dark-theme)
+(require 'fogus-theme)
 
 (provide 'my-theme)
