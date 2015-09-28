@@ -41,3 +41,4 @@
 ;; personal settings
 (toggle-frame-maximized)
 (electric-pair-mode)
+(global-linum-mode)

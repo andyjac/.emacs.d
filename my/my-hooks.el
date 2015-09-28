@@ -53,11 +53,13 @@
 (add-hook
  'sass-mode-hook
  (lambda ()
+   (linum-mode)
    (smart-indent-rigidly-mode)))
 
 (add-hook
  'haml-mode-hook
  (lambda ()
+   (linum-mode)
    (smart-indent-rigidly-mode)))
 
 (add-hook
