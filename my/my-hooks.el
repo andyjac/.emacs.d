@@ -43,7 +43,8 @@
  'js-mode-hook
  (lambda ()
    (auto-indent-mode)
-   (linum-mode)))
+   (linum-mode)
+   (electric-pair-mode)))
 
 (add-hook
  'coffee-mode-hook
@@ -95,6 +96,16 @@
 
 (add-hook
  'slime-repl-mode-hook
+ (lambda ()
+   (paredit-mode +1)))
+
+(add-hook
+ 'clojure-mode-hook
+ (lambda ()
+   (paredit-mode +1)))
+
+(add-hook
+ 'cider-repl-mode-hook
  (lambda ()
    (paredit-mode +1)))
 

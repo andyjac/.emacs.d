@@ -40,5 +40,6 @@
 
 ;; personal settings
 (toggle-frame-maximized)
-(electric-pair-mode)
 (global-linum-mode)
+(setq require-final-newline t)
+(setq ido-enable-flex-matching t)

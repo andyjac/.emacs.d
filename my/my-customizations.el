@@ -114,7 +114,7 @@
  '(ruby-align-chained-calls t)
  '(save-interprogram-paste-before-kill t)
  '(save-place t nil (saveplace))
- '(sgml-basic-offset 2 t)
+ '(sgml-basic-offset 4 t)
  '(show-paren-mode t)
  '(show-smartparens-global-mode t)
  '(simp-completing-read-command (quote ido-completing-read))
