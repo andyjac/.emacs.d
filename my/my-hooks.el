@@ -46,6 +46,11 @@
    (linum-mode)
    (electric-pair-mode)))
 
+;; (eval-after-load 'js
+;;   '(add-hook 'js-mode-hook
+;;              (lambda ()
+;;                (add-hook 'before-save-hook 'web-beautify-js-buffer t t))))
+
 (add-hook
  'coffee-mode-hook
  (lambda ()
@@ -108,5 +113,16 @@
  'cider-repl-mode-hook
  (lambda ()
    (paredit-mode +1)))
+
+(add-hook
+ `web-mode-hook
+ (lambda ()
+   (setq web-mode-markup-indent-offset 2)))
+
+(add-hook
+ `html-mode-hook
+ (lambda ()
+   (electric-pair-mode)
+   (setq sgml-basic-offset 4)))
 
 (provide 'my-hooks)
