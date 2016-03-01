@@ -125,4 +125,9 @@
    (electric-pair-mode)
    (setq sgml-basic-offset 4)))
 
+(add-hook
+ `typescript-mode-hook
+ (lambda ()
+   (electric-pair-mode)))
+
 (provide 'my-hooks)
