@@ -1,3 +1,3 @@
-(require 'vibrant-ink-theme)
+(require 'base16-brewer-dark-theme)
 
 (provide 'my-theme)

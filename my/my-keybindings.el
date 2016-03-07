@@ -87,7 +87,6 @@
 (global-set-key (kbd "M-j m b") 'emms-previous)
 
 ;; personal keybindings
-(global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "C-x C-/") 'comment-region)
 (global-set-key (kbd "C-x C-;") 'uncomment-region)
 (global-set-key (kbd "C-x C-.") 'multi-term)
