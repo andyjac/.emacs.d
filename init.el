@@ -43,3 +43,8 @@
 (global-linum-mode)
 (setq require-final-newline t)
 (setq ido-enable-flex-matching t)
+
+;; env settings
+(require 'exec-path-from-shell)
+(exec-path-from-shell-copy-env "SSH_AGENT_PID")
+(exec-path-from-shell-copy-env "SSH_AUTH_SOCK")

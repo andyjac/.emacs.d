@@ -135,4 +135,9 @@
    (eldoc-mode +1)
    (auto-complete-mode)))
 
+(add-hook
+ `org-mode-hook
+ (lambda ()
+   (flyspell-mode)))
+
 (provide 'my-hooks)

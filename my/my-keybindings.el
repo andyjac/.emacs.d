@@ -46,9 +46,12 @@
 (global-set-key (kbd "C-S-b") 'bury-buffer)
 (global-set-key (kbd "C-S-f") 'unbury-buffer)
 (global-set-key (kbd "C-S-SPC") 'exchange-point-and-mark)
+(global-set-key (kbd "C-s") 'isearch-forward)
+(global-set-key (kbd "C-r") 'isearch-backward)
 (global-set-key (kbd "C-S-s") 'isearch-symbol-at-point)
 (global-set-key (kbd "C-S-r") 'isearch-backward-symbol-at-point)
 (global-set-key (kbd "C-S-m") 'mc/mark-all-like-this-dwim)
+(global-set-key (kbd "M-n") 'mc/mark-next-like-this)
 
 (global-set-key (kbd "M-j") nil) ;; make room for nice user prefix
 (global-set-key (kbd "M-j '") 'toggle-quote-type)
@@ -90,5 +93,7 @@
 (global-set-key (kbd "C-x C-/") 'comment-region)
 (global-set-key (kbd "C-x C-;") 'uncomment-region)
 (global-set-key (kbd "C-x C-.") 'multi-term)
+(global-set-key (kbd "C-<tab>") 'smart-rigid-indent)
+(global-set-key (kbd "<backtab>") 'smart-rigid-unindent)
 
 (provide 'my-keybindings)
