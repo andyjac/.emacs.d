@@ -46,11 +46,6 @@
    (linum-mode)
    (electric-pair-mode)))
 
-;; (eval-after-load 'js
-;;   '(add-hook 'js-mode-hook
-;;              (lambda ()
-;;                (add-hook 'before-save-hook 'web-beautify-js-buffer t t))))
-
 (add-hook
  'coffee-mode-hook
  (lambda ()
