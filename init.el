@@ -1,3 +1,10 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (let ((default-directory "~/.emacs.d/"))
   (normal-top-level-add-subdirs-to-load-path))
 
@@ -43,6 +50,7 @@
 (global-linum-mode)
 (setq require-final-newline t)
 (setq ido-enable-flex-matching t)
+(electric-pair-mode)
 
 ;; env settings
 (require 'exec-path-from-shell)

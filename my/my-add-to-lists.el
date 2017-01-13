@@ -9,6 +9,7 @@
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (provide 'my-add-to-lists)
 
 ;;(add-to-list 'auto-mode-alist '(".ru" . ruby-mode))

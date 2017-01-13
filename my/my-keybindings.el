@@ -96,4 +96,9 @@
 (global-set-key (kbd "C-<tab>") 'smart-rigid-indent)
 (global-set-key (kbd "<backtab>") 'smart-rigid-unindent)
 
+;; tss
+(global-set-key (kbd "C-:") 'tss-popup-help)
+(global-set-key (kbd "C->") 'tss-jump-to-definition)
+(global-set-key (kbd "C-c i") 'tss-implement-definition)
+
 (provide 'my-keybindings)

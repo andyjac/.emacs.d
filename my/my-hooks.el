@@ -39,12 +39,29 @@
    (rvm-activate-corresponding-ruby)
    (flymake-ruby-load)))
 
+;; (add-hook
+;;  'js-mode-hook
+;;  (lambda ()
+;;    (auto-indent-mode)
+;;    (linum-mode)
+;;    (electric-pair-mode)))
+
 (add-hook
- 'js-mode-hook
+ 'js2-mode-hook
  (lambda ()
    (auto-indent-mode)
    (linum-mode)
-   (electric-pair-mode)))
+   (electric-pair-mode)
+   ;; (setq js2-basic-offset 2)
+   (setq js2-mode-indent-ignore-first-tab t)
+   ;; (setq js2-highlight-external-variables nil)
+   ;; (setq js2-highlight-level 3)
+   ;; (setq js2-mirror-mode nil)
+   ;; (setq js2-mode-show-parse-errors nil)
+   ;; (setq js2-mode-show-strict-warnings nil)
+   ;; (setq js2-bounce-indent-p nil)
+   ;; (setq js2-pretty-multiline-declarations t)
+   ))
 
 (add-hook
  'coffee-mode-hook
@@ -102,12 +119,17 @@
 (add-hook
  'clojure-mode-hook
  (lambda ()
-   (paredit-mode +1)))
+   (paredit-mode)))
 
 (add-hook
  'cider-repl-mode-hook
  (lambda ()
-   (paredit-mode +1)))
+   (paredit-mode)))
+
+(add-hook
+ 'cider-mode-hook
+ (lambda ()
+   paredit-mode))
 
 (add-hook
  `web-mode-hook
@@ -118,21 +140,50 @@
  `html-mode-hook
  (lambda ()
    (electric-pair-mode)
-   (setq sgml-basic-offset 4)))
+   (setq sgml-basic-offset 2)))
 
 (add-hook
  `typescript-mode-hook
  (lambda ()
-   (electric-pair-mode)
+   (tss-setup-current-buffer)
+
    (tide-setup)
    (flycheck-mode +1)
    (setq flycheck-check-syntax-automatically '(save mode-enabled))
-   (eldoc-mode +1)
-   (auto-complete-mode)))
+   (tide-hl-identifier-mode +1)
+   (setq company-tooltip-align-annotations t)
+   ;; (company-mode +1)
+   (eldoc-mode +1)))
+
+;; (hook-if 'before-save-hook (major-mode-match-p "typescript") (tide-format-before-save))
 
 (add-hook
  `org-mode-hook
  (lambda ()
    (flyspell-mode)))
+
+(add-hook
+ `c-mode-hook
+ (lambda ()
+   (electric-pair-mode)))
+
+(add-hook
+ `json-mode-hook
+ (lambda ()
+   (electric-pair-mode)))
+
+(add-hook
+ `shell-script-mode-hook
+ (lambda ()
+   (electric-pair-mode)))
+
+;; (add-hook
+;;  `cider-mode-hook
+;;  (lambda ()
+;;    (add-hook
+;;     `after-save-hook
+;;     (lambda ()
+;;       (if (and (boundp 'cider-mode) cider-mode)
+;;           (cider-namespace-refresh))))))
 
 (provide 'my-hooks)
