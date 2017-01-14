@@ -95,6 +95,8 @@
 (global-set-key (kbd "C-x C-.") 'multi-term)
 (global-set-key (kbd "C-<tab>") 'smart-rigid-indent)
 (global-set-key (kbd "<backtab>") 'smart-rigid-unindent)
+(global-set-key (kbd "M-s") 'delete-pair)
+
 
 ;; tss
 (global-set-key (kbd "C-:") 'tss-popup-help)
