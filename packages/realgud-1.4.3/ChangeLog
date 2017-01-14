@@ -1,0 +1,56 @@
+2016-08-02  rocky  <rocky@gnu.org>
+
+	Merge commit '6dc971269f6f9435e5159c2cfe66fc5e4b296df2'
+
+2016-08-02  rocky  <rocky@gnu.org>
+
+	Merge commit 'bdbbc65028af8deb55a4e474be43b5b99e6cc539'
+
+2016-08-01  rocky  <rocky@gnu.org>
+
+	Bump version
+
+2016-08-01  rocky  <rocky@gnu.org>
+
+	Wrong require - thanks Stefan
+
+2016-08-01  rocky  <rocky@gnu.org>
+
+	Merge commit 'ab69dbcccb4d0ed5ec2a7bd6bc7b3cff7e7adbac'
+
+2016-07-31  rocky  <rocky@gnu.org>
+
+	Merge commit '48b48807a8917e455b5687945a81375703bd1a6e'
+
+	Conflicts:
+	packages/realgud/el-get-install.el
+
+2016-07-31  Stefan Monnier  <monnier@iro.umontreal.ca>
+
+	* realgud.el: Fix "Author" to be a valid email
+
+2016-07-31  rocky  <rocky@gnu.org>
+
+	Merge commit 'a8bd8678db59322dac1015576716c4ebb2c628df'
+
+2016-07-30  rocky  <rocky@gnu.org>
+
+	Remove list-utils dependency
+
+2016-07-30  rocky  <rocky@gnu.org>
+
+	Merge commit '8d07bdedfe9e56de8a32f32af6e4c853a5fa6c4d'
+
+2016-07-30  rocky  <rocky@gnu.org>
+
+	Not needed for elpa
+
+2016-07-30  rocky  <rocky@gnu.org>
+
+	Add 'packages/realgud/' from commit
+	'b7a7fe924217931332915d457928c6851db4a636'
+
+	git-subtree-dir: packages/realgud git-subtree-mainline:
+	5f5f2bb275049511a807df118504f1cee7788d5f git-subtree-split:
+	b7a7fe924217931332915d457928c6851db4a636
+
