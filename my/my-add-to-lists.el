@@ -6,10 +6,13 @@
 (add-to-list 'auto-mode-alist '(".stumpwmrc'" . stumpwm-mode))
 (add-to-list 'auto-mode-alist '(".hamlbars'" . haml-mode))
 (add-to-list 'auto-mode-alist '(".hamlc'" . haml-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . rjsx-mode))
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-mode))
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode))
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+;; (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode)) ;; rjsx mode extends js2-mode
+(add-to-list 'auto-mode-alist '(".eslintrc" . json-mode))
+(add-to-list 'auto-mode-alist '(".babelrc" . json-mode))
 (provide 'my-add-to-lists)
 
 ;;(add-to-list 'auto-mode-alist '(".ru" . ruby-mode))
